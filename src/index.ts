@@ -63,7 +63,7 @@ function handleGetNetworksByType(aq: ActiveQuery) {
     return;
   }
 
-  if (!types.has(aq.callerInput)) {
+  if (!types.has(aq.callerInput.type)) {
     aq.reject("type not registered");
     return;
   }
@@ -71,7 +71,7 @@ function handleGetNetworksByType(aq: ActiveQuery) {
   aq.respond(
     [...networks.entries()]
       .filter((item) => {
-        return item[1].has(aq.callerInput);
+        return item[1].has(aq.callerInput.type);
       })
       .map((item) => item[0]),
   );
