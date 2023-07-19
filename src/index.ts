@@ -5,7 +5,7 @@ const networks: Map<string, Set<string>> = new Map<string, Set<string>>();
 
 addHandler("registerType", handleRegisterType);
 addHandler("getTypes", handleGetTypes);
-addHandler("getNetworkTypes", handleGetNetworkType);
+addHandler("getNetworkTypes", handleGetNetworkTypes);
 addHandler("registerNetwork", handleRegisterNetwork);
 
 function handleRegisterType(aq: ActiveQuery) {
@@ -40,7 +40,7 @@ function handleRegisterNetwork(aq: ActiveQuery) {
   aq.respond();
 }
 
-function handleGetNetworkType(aq: ActiveQuery) {
+function handleGetNetworkTypes(aq: ActiveQuery) {
   if (!("module" in aq.callerInput)) {
     aq.reject("module missing");
     return;
