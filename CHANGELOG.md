@@ -1,3 +1,10 @@
+# [0.1.0-develop.3](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.1.0-develop.2...v0.1.0-develop.3) (2023-07-19)
+
+
+### Features
+
+* add getNetworksByType api call ([75c25d7](https://git.lumeweb.com/LumeWeb/kernel-network-registry/commit/75c25d7cab1240d6f2b194af9f262f76f98c6b48))
+
 # [0.1.0-develop.2](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.1.0-develop.1...v0.1.0-develop.2) (2023-07-19)
 
 
