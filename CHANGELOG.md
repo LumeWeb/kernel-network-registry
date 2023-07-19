@@ -1,3 +1,10 @@
+# [0.1.0-develop.2](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.1.0-develop.1...v0.1.0-develop.2) (2023-07-19)
+
+
+### Bug Fixes
+
+* rename handleGetNetworkType ([d9163a4](https://git.lumeweb.com/LumeWeb/kernel-network-registry/commit/d9163a4e530745d36a26ea8cbad5fb8ef35c3b93))
+
 # [0.1.0-develop.1](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.0.1...v0.1.0-develop.1) (2023-07-19)
 
 
