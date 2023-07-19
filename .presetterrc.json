@@ -1,0 +1,5 @@
+{
+  "preset": [
+    "@lumeweb/presetter-kernel-module-preset"
+  ]
+}
