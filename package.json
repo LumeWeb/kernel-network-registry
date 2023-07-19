@@ -1,0 +1,13 @@
+{
+    "name": "@lumeweb/kernel-network-registry",
+    "version": "0.1.0",
+    "type": "module",
+    "readme": "ERROR: No README data found!",
+    "_id": "@lumeweb/kernel-module-network-registry@0.1.0",
+    "scripts": {
+        "prepare": "presetter bootstrap"
+    },
+    "dependencies": {
+        "@lumeweb/libkernel": "^0.1.0-develop.20"
+    }
+}

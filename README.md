@@ -1,2 +1,2 @@
-# kernel-module-network-registry
+# kernel-network-registry
 
