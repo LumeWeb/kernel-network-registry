@@ -1,13 +1,12 @@
 {
     "name": "@lumeweb/kernel-network-registry",
-    "version": "0.1.0",
+    "version": "0.1.0-develop.1",
     "type": "module",
     "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "gitea@git.lumeweb.com:LumeWeb/kernel-network-registry.git"
     },
-    "_id": "@lumeweb/kernel-network-registry@0.1.0",
     "scripts": {
         "prepare": "presetter bootstrap",
         "build": "run build",
