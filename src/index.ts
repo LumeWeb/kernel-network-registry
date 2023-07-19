@@ -6,6 +6,7 @@ const networks: Map<string, Set<string>> = new Map<string, Set<string>>();
 addHandler("registerType", handleRegisterType);
 addHandler("getTypes", handleGetTypes);
 addHandler("getNetworkTypes", handleGetNetworkTypes);
+addHandler("getNetworksByType", handleGetNetworksByType);
 addHandler("registerNetwork", handleRegisterNetwork);
 
 function handleRegisterType(aq: ActiveQuery) {
@@ -54,4 +55,24 @@ function handleGetNetworkTypes(aq: ActiveQuery) {
   aq.respond([
     ...(networks.get(aq.callerInput.module) as Set<string>).values(),
   ]);
+}
+
+function handleGetNetworksByType(aq: ActiveQuery) {
+  if (!("type" in aq.callerInput)) {
+    aq.reject("type missing");
+    return;
+  }
+
+  if (!types.has(aq.callerInput)) {
+    aq.reject("type not registered");
+    return;
+  }
+
+  aq.respond(
+    [...networks.entries()]
+      .filter((item) => {
+        return item[1].has(aq.callerInput);
+      })
+      .map((item) => item[0]),
+  );
 }
