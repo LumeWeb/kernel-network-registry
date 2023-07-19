@@ -3,9 +3,15 @@
     "version": "0.1.0",
     "type": "module",
     "readme": "ERROR: No README data found!",
-    "_id": "@lumeweb/kernel-module-network-registry@0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "gitea@git.lumeweb.com:LumeWeb/kernel-network-registryh.git"
+    },
+    "_id": "@lumeweb/kernel-network-registry@0.1.0",
     "scripts": {
-        "prepare": "presetter bootstrap"
+        "prepare": "presetter bootstrap",
+        "build": "run build",
+        "semantic-release": "semantic-release"
     },
     "dependencies": {
         "@lumeweb/libkernel": "^0.1.0-develop.20"
