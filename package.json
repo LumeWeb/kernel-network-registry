@@ -15,5 +15,8 @@
     },
     "dependencies": {
         "@lumeweb/libkernel": "^0.1.0-develop.20"
+    },
+    "devDependencies": {
+        "@lumeweb/presetter-kernel-module-preset": "^0.1.0-develop.43"
     }
 }
