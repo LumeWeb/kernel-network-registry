@@ -8,7 +8,7 @@
             "name": "@lumeweb/kernel-network-registry",
             "version": "0.1.0-develop.3",
             "dependencies": {
-                "@lumeweb/libkernel": "^0.1.0-develop.20"
+                "@lumeweb/libkernel": "^0.1.0-develop.24"
             },
             "devDependencies": {
                 "@lumeweb/presetter-kernel-module-preset": "^0.1.0-develop.43"
@@ -1676,11 +1676,11 @@
             }
         },
         "node_modules/@lumeweb/libkernel": {
-            "version": "0.1.0-develop.20",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libkernel/-/libkernel-0.1.0-develop.20.tgz",
-            "integrity": "sha512-z7yRk6B0P0bxPe+a4Xm5/Bl6eIfkDCB2IJhNK2Gm+o7j4RbWbizRk79+zgBFWMrYzo8bVrpBKK7nGI3iNOgT9g==",
+            "version": "0.1.0-develop.24",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libkernel/-/libkernel-0.1.0-develop.24.tgz",
+            "integrity": "sha512-rUCa6gJLOtYb7FShwoQ+Nsn/ounqjTmzoCDuveQXnOXsDkN4yolTYtR/WhVetnVjaBiAs/m37uchB25oOwpBJg==",
             "dependencies": {
-                "@lumeweb/libweb": "0.2.0-develop.26",
+                "@lumeweb/libweb": "0.2.0-develop.27",
                 "emittery": "^1.0.1"
             }
         },
@@ -1713,9 +1713,9 @@
             }
         },
         "node_modules/@lumeweb/libweb": {
-            "version": "0.2.0-develop.26",
-            "resolved": "https://registry.npmjs.org/@lumeweb/libweb/-/libweb-0.2.0-develop.26.tgz",
-            "integrity": "sha512-XRIDiqRFqlEbcwjxAfkv7UYnyTflN3Q4rki8YAd9QrLQM2vycslgPLYS53vVJVL9GPH93V5J9z2V4DPQZlOOkQ==",
+            "version": "0.2.0-develop.27",
+            "resolved": "https://registry.npmjs.org/@lumeweb/libweb/-/libweb-0.2.0-develop.27.tgz",
+            "integrity": "sha512-obS4a6mcHJNoWXy5fCDuGAIVMee0ivK8q/q0semqoS3v0PS7t7sUmRX5ajyCwGbACXYqEdq3vU7RwzxhUkuNGg==",
             "dependencies": {
                 "@lumeweb/community-portals": "^0.1.0-develop.6",
                 "@lumeweb/libportal": "^0.2.0-develop.16",
@@ -11485,6 +11485,7 @@
             "version": "1.5.0",
             "inBundle": true,
             "license": "MIT",
+            "optional": true,
             "engines": {
                 "node": ">=0.1.90"
             }
@@ -11776,6 +11777,7 @@
             "version": "0.11.0",
             "inBundle": true,
             "license": "MIT",
+            "optional": true,
             "engines": {
                 "node": ">=14"
             }
@@ -12284,6 +12286,7 @@
             "version": "0.1.13",
             "inBundle": true,
             "license": "MIT",
+            "optional": true,
             "dependencies": {
                 "iconv-lite": "^0.6.2"
             }
@@ -12479,6 +12482,7 @@
             "version": "0.6.3",
             "inBundle": true,
             "license": "MIT",
+            "optional": true,
             "dependencies": {
                 "safer-buffer": ">= 2.1.2 < 3.0.0"
             },
@@ -13706,7 +13710,8 @@
         "node_modules/npm/node_modules/safer-buffer": {
             "version": "2.1.2",
             "inBundle": true,
-            "license": "MIT"
+            "license": "MIT",
+            "optional": true
         },
         "node_modules/npm/node_modules/semver": {
             "version": "7.5.2",
