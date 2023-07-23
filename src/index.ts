@@ -33,9 +33,9 @@ function handleRegisterNetwork(aq: ActiveQuery) {
   let network = networks.get(aq.domain);
 
   if (network) {
-    aq.callerInput.type.forEach((item) => network?.add(item));
+    [...aq.callerInput.type].forEach((item) => network?.add(item));
   } else {
-    networks.set(aq.domain, new Set([aq.callerInput.types]));
+    networks.set(aq.domain, new Set([...aq.callerInput.types]));
   }
 
   aq.respond();
