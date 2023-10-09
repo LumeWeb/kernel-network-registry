@@ -1,3 +1,10 @@
+# [0.1.0-develop.9](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.1.0-develop.8...v0.1.0-develop.9) (2023-10-09)
+
+
+### Features
+
+* add subscribeToUpdates method to listen for updates ([f11297d](https://git.lumeweb.com/LumeWeb/kernel-network-registry/commit/f11297d5cd0dc06d0f7ed5b43cf1b5d939596b7a))
+
 # [0.1.0-develop.8](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.1.0-develop.7...v0.1.0-develop.8) (2023-09-03)
 
 # [0.1.0-develop.7](https://git.lumeweb.com/LumeWeb/kernel-network-registry/compare/v0.1.0-develop.6...v0.1.0-develop.7) (2023-09-02)
