@@ -1,13 +1,19 @@
 import { ActiveQuery, addHandler } from "@lumeweb/libkernel/module";
+import { EventEmitter } from "events";
 
 const types: Set<string> = new Set<string>();
 const networks: Map<string, Set<string>> = new Map<string, Set<string>>();
+
+const events = new EventEmitter();
 
 addHandler("registerType", handleRegisterType);
 addHandler("getTypes", handleGetTypes);
 addHandler("getNetworkTypes", handleGetNetworkTypes);
 addHandler("getNetworksByType", handleGetNetworksByType);
 addHandler("registerNetwork", handleRegisterNetwork);
+addHandler("subscribeToUpdates", handleSubscribeToUpdates, {
+  receiveUpdates: true,
+});
 
 function handleRegisterType(aq: ActiveQuery) {
   types.add(aq.callerInput);
@@ -37,6 +43,8 @@ function handleRegisterNetwork(aq: ActiveQuery) {
   } else {
     networks.set(aq.domain, new Set([...aq.callerInput.types]));
   }
+
+  events.emit("update");
 
   aq.respond();
 }
@@ -75,4 +83,17 @@ function handleGetNetworksByType(aq: ActiveQuery) {
       })
       .map((item) => item[0]),
   );
+}
+
+function handleSubscribeToUpdates(aq: ActiveQuery) {
+  const cb = () => {
+    aq.sendUpdate();
+  };
+
+  events.on("update", cb);
+
+  aq.setReceiveUpdate?.(() => {
+    events.off("update", cb);
+    aq.respond();
+  });
 }
